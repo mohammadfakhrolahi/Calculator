@@ -1,4 +1,5 @@
-# A calculator app built with HTML, CSS, and JavaScript.
+# Calculator
+<p>A calculator app built with HTML, CSS, and JavaScript.</p>
 
 <hr>
 
