@@ -49,49 +49,86 @@ span, input {
   font-size: 1.4rem;
 }
 
+:root {
+  --main-bg: #1b1b1d;
+  --secondary-bg: #2b323c;
+  --tertiary-bg: #222328;
+  --main-color: #a5caff;
+  --purple: #aea5ff;
+  --secondary-color: #63a4ff;
+  --text-color: #fefefe;
+  --calculation-color: #a5caff;
+  --result-color: #63a4ff;
+}
+
 .btn {
   width: 7rem;
   min-width: 7rem;
   height: 7rem;
   min-height: 7rem;
-  background: #262931;
-  color: #fff;
+  background: var(--tertiary-bg);
+  color: var(--text-color);
   border-radius: 50%;
   font-size: 2.2rem;
   text-align: center;
+  transition: 0.2s;
 }
 .btn i {
   color: #ea7270;
 }
+.btn:active {
+  border-radius: 2rem;
+}
 
 .btn-operation, .plus-minus {
-  color: #ea7270;
+  background: var(--main-color);
+  color: inherit;
   font-size: 3rem;
 }
 
 .equals-btn {
-  background: #ea7270;
-  color: #262931;
+  background: var(--secondary-color);
+  color: inherit;
   font-size: 3rem;
 }
 
+.btn-clear-all {
+  background: var();
+}
+
+main {
+  height: 100vh;
+  background: var(--main-bg);
+}
+
 section {
-  width: fit-content;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
   margin: auto;
 }
 
 #screen {
   width: 100%;
-  max-width: 31rem;
-  min-height: 10rem;
-  border: 0.2rem solid #262931;
-  border-radius: 1rem;
+  max-width: 100%;
+  height: 100%;
+  min-height: 15rem;
+  background: var(--secondary-bg);
+  padding: 2rem;
   margin-bottom: 1rem;
+  border: 0.2rem solid #262931;
+  border-radius: 0 0 3rem 3rem;
 }
 
 #calculation {
   width: 100%;
   border: none;
+  background: inherit;
+  color: var(--calculation-color);
+  caret-color: var(--secondary-color);
   overflow: auto;
   font-size: 2rem;
   resize: none;
@@ -103,24 +140,19 @@ section {
 #result {
   width: 100%;
   height: 4rem;
+  color: var(--result-color);
   font-size: 4rem;
 }
 
 #keypad {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 1rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.buttons-last {
-  display: flex;
-  justify-content: flex-end;
+  justify-items: center;
+  padding: 2rem;
+  margin: auto;
 }
 
 ::-webkit-scrollbar {
@@ -128,12 +160,12 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ebb6b5;
+  background: var(--main-color);
   border-radius: 2.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ea7270;
+  background-color: var(--secondary-color);
   border-radius: 2.5rem;
 }
 

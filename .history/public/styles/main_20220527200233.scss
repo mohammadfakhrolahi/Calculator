@@ -1,0 +1,63 @@
+// Import Layout
+@import '../globalstyling/layout';
+
+section {
+  width: fit-content;
+  margin: auto;
+}
+
+#screen {
+  width: 100%;
+  max-width: 31rem;
+  min-height: 10rem;
+  border: 0.2rem solid #262931;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#calculation {
+  width: 100%;
+  border: none;
+  // overflow-x: hidden;
+  overflow: auto;
+  font-size: 2rem;
+  resize: none;
+  &:focus-within {
+    outline: none;
+  }
+}
+
+#result {
+  width: 100%;
+  height: 4rem;
+  font-size: 4rem;
+}
+
+#keypad {
+  // width: 50rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 1rem;
+}
+
+// ---- Scrollbar for Google Chrome ----
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #ebb6b5;
+  border-radius: 2.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea7270;
+  border-radius: 2.5rem;
+}
+
+// ---- Scrollbar for FireFox ----
+:root {
+  scrollbar-color: #ea7270 #ebb6b5 !important;
+  scrollbar-width: thin !important;
+}
