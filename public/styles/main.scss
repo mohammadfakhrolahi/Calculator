@@ -28,6 +28,7 @@ section {
   // transition: 1s;
 }
 
+// Calculation Display
 #calculation {
   width: 100%;
   border: none;
@@ -42,6 +43,7 @@ section {
   }
 }
 
+// Result Display
 #result {
   width: 100%;
   height: 4rem;
@@ -72,6 +74,7 @@ section {
   margin: auto;
 }
 
+// Tab bar
 #tab {
   width: 100%;
   // height: 4rem;
@@ -82,7 +85,7 @@ section {
   padding: 1rem 2rem 0 2rem;
 }
 
-// ---- Scrollbar for Google Chrome ----
+// Scrollbar for Google Chrome
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -97,7 +100,7 @@ section {
   border-radius: 2.5rem;
 }
 
-// ---- Scrollbar for FireFox ----
+// Scrollbar for FireFox
 :root {
   scrollbar-color: #ea7270 #ebb6b5 !important;
   scrollbar-width: thin !important;
