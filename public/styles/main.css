@@ -155,11 +155,22 @@ section {
   font-size: 4rem;
 }
 
+#history {
+  display: none;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 100%;
+}
+#history .history__item {
+  color: var(--calculation-color);
+  font-size: 2.6rem;
+}
+
 #keypad {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(5, auto);
   grid-gap: 1rem;
   justify-items: center;
   padding: 2rem;
@@ -172,7 +183,7 @@ section {
   justify-content: space-between;
   align-items: center;
   grid-column: 1/-1;
-  padding: 0 2rem 1rem 2rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 ::-webkit-scrollbar {
