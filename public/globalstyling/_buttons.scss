@@ -1,3 +1,18 @@
+// Small Button
+.btn-s {
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  background: var(--tertiary-bg);
+  transition: 0.2s;
+
+  &:active {
+    border-radius: 1rem;
+  }
+}
+
+// Main Button
 .btn {
   width: 7rem;
   min-width: 7rem;

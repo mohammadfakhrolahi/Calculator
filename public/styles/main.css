@@ -61,6 +61,18 @@ span, input {
   --result-color: #63a4ff;
 }
 
+.btn-s {
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  background: var(--tertiary-bg);
+  transition: 0.2s;
+}
+.btn-s:active {
+  border-radius: 1rem;
+}
+
 .btn {
   width: 7rem;
   min-width: 7rem;
@@ -147,11 +159,20 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, auto);
   grid-gap: 1rem;
   justify-items: center;
   padding: 2rem;
   margin: auto;
+}
+
+#tab {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/-1;
+  padding: 0 2rem 1rem 2rem;
 }
 
 ::-webkit-scrollbar {
