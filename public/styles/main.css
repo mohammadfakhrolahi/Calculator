@@ -129,7 +129,7 @@ section {
   color: var(--calculation-color);
   caret-color: var(--secondary-color);
   overflow: auto;
-  font-size: 2rem;
+  font-size: 2.6rem;
   resize: none;
 }
 #calculation:focus-within {
