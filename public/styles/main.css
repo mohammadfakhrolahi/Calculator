@@ -61,8 +61,20 @@ span, input {
   --result-color: #63a4ff;
 }
 
+.light-theme {
+  --main-bg: #ffffff;
+  --secondary-bg: #f6f7fc;
+  --tertiary-bg: #ecf0fc;
+  --main-color: #a5caff;
+  --purple: #aea5ff;
+  --secondary-color: #63a4ff;
+  --text-color: #1b1b1d;
+  --calculation-color: #1b1b1d;
+  --result-color: #1b1b1d;
+}
+
 .btn-s {
-  color: var(--main-color);
+  color: var(--calculation-color);
   padding: 1rem 2rem;
   border-radius: 3rem;
   font-size: 1.4rem;
