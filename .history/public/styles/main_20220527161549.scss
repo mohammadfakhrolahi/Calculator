@@ -1,0 +1,48 @@
+// Import Layout
+@import '../globalstyling/layout';
+
+section {
+  width: fit-content;
+  margin: auto;
+}
+
+#screen {
+  width: 100%;
+  max-width: 31rem;
+  min-height: 10rem;
+  border: 0.2rem solid #262931;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#calculation {
+  width: 100%;
+  all: unset;
+  overflow: auto;
+  font-size: 2rem;
+  resize: none;
+}
+
+#result {
+  width: 100%;
+  height: 4rem;
+  font-size: 4rem;
+}
+
+#keypad {
+  // width: 50rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons-last {
+  display: flex;
+  justify-content: flex-end;
+}

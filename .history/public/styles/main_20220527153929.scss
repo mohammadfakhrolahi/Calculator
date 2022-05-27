@@ -1,0 +1,38 @@
+// Import Layout
+@import '../globalstyling/layout';
+
+section {
+  width: fit-content;
+  margin: auto;
+}
+
+#screen {
+  width: 100%;
+  height: 10rem;
+  border: 0.2rem solid #262931;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#keypad {
+  // width: 50rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons-last {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#result {
+  background: red;
+  
+}

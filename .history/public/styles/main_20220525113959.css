@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* Error: expected "{".
+ *    ,
+ * 33 | }public/styles/main.scss
+ *    |                         ^
+ *    '
+ *   .history\public\styles\main_20220525113959.scss 33:25  root stylesheet */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    ╷\a 33 │ }public/styles/main.scss\a    │                         ^\a    ╵\a   .history\\public\\styles\\main_20220525113959.scss 33:25  root stylesheet';
+}
+
+/*# sourceMappingURL=main_20220525113959.css.map */

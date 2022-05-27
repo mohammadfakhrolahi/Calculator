@@ -1,0 +1,54 @@
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: Roboto;
+}
+
+p,
+span {
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
+}
+
+// Reset CSS
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body,
+div,
+p,
+span {
+  font-weight: normal;
+  color: var(--primary-text);
+}
+
+p,
+span {
+  line-height: 1.5;
+}
+
+button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  all: unset;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+span {
+  all: unset;
+  font-size: 1.4rem;
+}
