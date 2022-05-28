@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./public/styles/main.css">
+  <link rel="icon" href="./public/image/icon.ico">
+  <title>Calculator</title>
+</head>
+<body>
+  <main>
+    <section>
+      <div id="screen">
+        <textarea id="calculation"></textarea>
+        <div id="result"></div>
+        <div id="his"></div>
+      </div>
+
+      <div id="tab">
+        <button class="btn-s btn-history"><i class="fa-solid fa-clock"></i></button>
+        <button class="btn-s btn-delete"><i class="fa-solid fa-delete-left"></i></button>
+      </div>
+
+      <div id="keypad">
+
+        <button data-value="C" class="btn-clear-all btn btn-operation">C</button>
+        <button value="" class="btn plus-minus" onclick="plusMinus()">+/-</button>
+        <button data-value="%" class="btn btn-number btn-operation">%</button>
+        <button value="/" class="btn btn-operation">÷</button>
+        <button class="btn btn-number">7</button>
+        <button class="btn btn-number">8</button>
+        <button class="btn btn-number">9</button>
+        <button value="*" class="btn btn-operation">×</button>
+        <button class="btn btn-number">4</button>
+        <button class="btn btn-number">5</button>
+        <button class="btn btn-number">6</button>
+        <button value="-" class="btn btn-operation">-</button>
+        <button class="btn btn-number">1</button>
+        <button class="btn btn-number">2</button>
+        <button class="btn btn-number">3</button>
+        <button value="+" class="btn btn-operation">+</button>
+        <button value=")" class="btn parenthesis" onclick="parenthesis()">( )</button>
+        <button class="btn btn-number">0</button>
+        <button class="btn btn-number  btn-dot">.</button>
+        <button data-value="=" class="btn btn-operation equals-btn">=</button>
+        <!-- <button data-delete class="btn-delete btn number"><i class="fa-solid fa-delete-left"></i></button> -->
+
+      </div>
+    </section>
+  </main>
+<script src="./src/index.js"></script>
+</body>
+</html>

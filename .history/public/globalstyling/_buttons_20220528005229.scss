@@ -1,0 +1,53 @@
+// Small Button
+.btn-s {
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  background: var(--tertiary-bg);
+  transition: 0.2s;
+
+  &:active {
+    border-radius: 1rem;
+  }
+}
+
+// Main Button
+.btn {
+  width: 7rem;
+  min-width: 7rem;
+  height: 7rem;
+  min-height: 7rem;
+  background: var(--tertiary-bg);
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 2.2rem;
+  text-align: center;
+  transition: 0.2s;
+
+  i {
+    color: #ea7270;
+  }
+
+  &:active {
+    border-radius: 2rem;
+  }
+
+  .plus-minus&--operation {
+    background: var(--main-color);
+    color: inherit;
+    font-size: 3rem;
+  }
+}
+
+// Equals Button
+.equals-btn {
+  background: var(--secondary-color);
+  color: inherit;
+  font-size: 3rem;
+}
+
+// C Button
+.btn-clear-all {
+  background: var();
+}

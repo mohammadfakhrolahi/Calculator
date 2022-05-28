@@ -1,0 +1,91 @@
+// Import Layout
+@import '../globalstyling/layout';
+
+main {
+  height: 100vh;
+  background: var(--main-bg);
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+#screen {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 15rem;
+  background: var(--secondary-bg);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0 3rem 3rem;
+}
+
+#calculation {
+  width: 100%;
+  border: none;
+  background: inherit;
+  color: var(--calculation-color);
+  caret-color: var(--secondary-color);
+  overflow: auto;
+  font-size: 2.6rem;
+  resize: none;
+  &:focus-within {
+    outline: none;
+  }
+}
+
+#result {
+  width: 100%;
+  height: 4rem;
+  color: var(--result-color);
+  font-size: 4rem;
+}
+
+#keypad {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 1rem;
+  justify-items: center;
+  padding: 2rem;
+  margin: auto;
+}
+
+#tab {
+  width: 100%;
+  // height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/-1;
+  padding: 0 4rem 1rem 4rem;
+}
+
+// ---- Scrollbar for Google Chrome ----
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+  border-radius: 2.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 2.5rem;
+}
+
+// ---- Scrollbar for FireFox ----
+:root {
+  scrollbar-color: #ea7270 #ebb6b5 !important;
+  scrollbar-width: thin !important;
+}
